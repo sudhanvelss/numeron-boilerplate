@@ -5,6 +5,7 @@ var time = document.getElementById("timer");
 var timerInterval;
 var score = 0;
 
+ 
 // Initialize the timer with 5 seconds
 var timer = 6;
 
@@ -38,30 +39,33 @@ var lesser_than = document.getElementById("lesser-than");
 greater_than.addEventListener("click", () => {
     if (parseInt(num1.innerHTML) > parseInt(num2.innerHTML)) {
         score += 1;
+        random_numbers();
     } else {
         updatescore()
     } 
-    random_numbers();
+   
 
 });
 
 lesser_than.addEventListener("click", () => {
     if (parseInt(num1.innerHTML) < parseInt(num2.innerHTML)) {
         score += 1;
+        random_numbers();
     } else {
         updatescore()
     }
-    random_numbers();
+    
  
 });
 
 equal_to.addEventListener("click", () => {
     if (parseInt(num1.innerHTML) === parseInt(num2.innerHTML)) {
         score += 1;
+        random_numbers();
     } else {
         updatescore()
     }
-    random_numbers();
+    
 });
 
 // Iteration 4: Build a timer for the game

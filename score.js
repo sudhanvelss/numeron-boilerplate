@@ -6,5 +6,5 @@ score_box.textContent = show_score
 
 var playagain = document.getElementById("play-again-button")
 playagain.addEventListener("click", () =>{
-    window.location.href = "index.html"
-})
+    window.location.href = "game.html"
+})  
